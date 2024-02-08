@@ -307,9 +307,9 @@ public class ExpController : MonoBehaviour
             destroyWhenLastClientLeaves = true,
             useInstance = m_Realtime,
         });
-        spawn.transform.localScale = new Vector3(spawn.transform.localScale.x * size,
-            spawn.transform.localScale.x * 1,
-            spawn.transform.localScale.x * size);
+        spawn.transform.localScale = new Vector3(spawn.transform.localScale.x * 1,
+            spawn.transform.localScale.y * size,
+            spawn.transform.localScale.z * size);
         
         _cTrialNumber++;
 
